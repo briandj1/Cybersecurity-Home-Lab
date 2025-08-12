@@ -1,5 +1,5 @@
 # Cybersecurity-Home-Lab
-A repository documenting the architecture, configuration, and experiments conducted in my personal cybersecurity home lab
+A repository documenting the architecture, configuration and experiments conducted in my personal cybersecurity home lab
 
 
 # Cybersecurity Home Lab
@@ -14,7 +14,7 @@ This repository serves as the central documentation hub for my personal cybersec
 
 The lab is built on a virtualized platform, creating an isolated network environment to ensure all experimental traffic is contained.
 
-*   **Virtualization Platform:** [e.g., Oracle VM VirtualBox, VMware Workstation Player]
+*   **Virtualization Platform:** [e.g., Oracle VM VirtualBox]
 *   **Logical Segments:** The network is segmented into an "Attacker Zone" and a "Target Zone," separated by a virtual firewall.
 *   **High-Level Diagram:** A detailed network diagram is available in the `01_Architecture` directory.
 
@@ -22,12 +22,12 @@ The lab is built on a virtualized platform, creating an isolated network environ
 
 ## 3. Core Components
 
-| Role              | Operating System           | Key Software/Purpose                                  |
-| ----------------- | -------------------------- | ----------------------------------------------------- |
-| **Firewall/Router** | pfSense / OPNsense         | Network segmentation, traffic logging, IDS/IPS        |
+| Role              | Operating System             | Key Software/Purpose                                  |
+| ----------------- | --------------------------   | ----------------------------------------------------- |
+| **Firewall/Router** | pfSense                    | Network segmentation, traffic logging, IDS/IPS        |
 | **Attacker VM**     | Kali Linux                 | Nmap, Metasploit, Burp Suite, Wireshark               |
 | **Target VM #1**    | Metasploitable2            | Intentionally vulnerable Linux server for pentesting  |
-| **Target VM #2**    | Windows 10 (Unevaluated)   | Simulates a typical corporate endpoint                |
+| **Target VM #2**    | Windows 10                 | Simulates a typical corporate endpoint                |
 | **SIEM/Monitoring** | Security Onion (Optional)  | Centralized logging and threat analysis               |
 
 ---
