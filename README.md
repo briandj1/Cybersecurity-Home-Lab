@@ -14,8 +14,8 @@ This repository serves as the central documentation hub for my personal cybersec
 
 The lab is built on a virtualized platform, creating an isolated network environment to ensure all experimental traffic is contained.
 
-*   **Virtualization Platform:** [e.g., Oracle VM VirtualBox]
-*   **Logical Segments:** The network is segmented into an "Attacker Zone" and a "Target Zone," separated by a virtual firewall.
+*   **Virtualization Platform:** [e.g., VirtualBox]
+*   **Logical Segments:** The network is segmented into an "Attacker Zone" and a "Target Zone," separated by a virtual firewall [pfSense].
 *   **High-Level Diagram:** A detailed network diagram is available in the `01_Architecture` directory.
 
 ---
