@@ -28,7 +28,7 @@ The lab is built on a virtualized platform, creating an isolated network environ
 | **Attacker VM**     | Kali Linux                 | Nmap, Metasploit, Burp Suite, Wireshark               |
 | **Target VM #1**    | Metasploitable2            | Intentionally vulnerable Linux server for pentesting  |
 | **Target VM #2**    | Windows 10                 | Simulates a typical corporate endpoint                |
-| **SIEM/Monitoring** | Security Onion (Optional)  | Centralized logging and threat analysis               |
+| **SIEM/Monitoring** | Security Onion             | Centralized logging and threat analysis               |
 
 ---
 
