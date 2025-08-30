@@ -1,0 +1,11 @@
+# Configuration: Kali Linux Attacker VM
+
+*   **Source:** Official image from kali.org
+*   **VirtualBox Settings:**
+    *   **RAM:** 4 GB
+    *   **CPUs:** 2
+    *   **Network:** Attached to 'Internal Network' named 'intnet'
+*   **Post-Install Setup:**
+    *   Ran `sudo apt update && sudo apt upgrade -y`
+    *   Installed `'
+*   **Credentials:** `[user: kali / pass: kali]`
