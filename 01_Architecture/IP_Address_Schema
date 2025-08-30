@@ -1,0 +1,5 @@
+| Hostname          | IP Address      | Purpose          |
+| ----------------- | --------------- | ---------------- |
+| pfSense Firewall  | 192.168.1.1     | Gateway/Firewall |
+| Kali Linux        | 192.168.1.100   | Attacker         |
+| Metasploitable2   | 192.168.1.102   | Target           |
