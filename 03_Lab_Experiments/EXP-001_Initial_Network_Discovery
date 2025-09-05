@@ -1,0 +1,30 @@
+# Experiment 001: Initial Network Discovery
+
+*   **Objective:** To identify all live hosts and open services on the target network segment (192.168.10.0/24) from the attacker machine.
+*   **Tool(s) Used:** Nmap
+---
+### Steps Executed
+
+1.  Booted the Kali Linux attacker VM and the Metasploitable2 target VM.
+2.  Confirmed network connectivity by pinging the target: `ping 192.168.1.102`.
+3.  Executed a comprehensive TCP scan using the following command:
+    ```bash
+    nmap -sV -p- -T4 192.168.1.102
+    ```
+    *   `-sV`: Enumerate service versions
+    *   `-p-`: Scan all 65,535 TCP ports
+    *   `-T4`: Aggressive timing template for faster scanning
+
+### Findings & Analysis
+
+The scan revealed multiple open ports on the Metasploitable2 host. Key findings include:
+*   **Port 21/tcp:** Open (vsftpd 2.3.4) - This version is known to have a critical backdoor vulnerability (CVE-2011-2523).
+*   **Port 23/tcp:** Open (telnet) - Telnet transmits credentials in cleartext. Major security risk.
+*   **Port 80/tcp:** Open (Apache httpd 2.2.8) - Running a web server. Needs further investigation for vulnerabilities.
+*   *[List a few other interesting ports you find]*
+
+### Mitigation / Next Steps
+
+*   The vsftpd vulnerability represents a critical, high-priority risk and is a primary vector for initial access.
+*   Telnet should be disabled immediately and replaced with SSH.
+*   Further enumeration of the web server on port 80 is required using tools like Nikto or Burp Suite.
